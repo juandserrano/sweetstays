@@ -24,7 +24,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {exploreData?.map(item => (
               <SmallCard 
-              key={item.img}
+              key={ item.img }
               img={item.img} distance={item.distance} location={item.location} />
             ))}
           </div>
@@ -45,6 +45,7 @@ export default function Home() {
     </div>
   )
 }
+
 
 // export async function getStaticProps() {
 //   const exploreData = await fetch('api/data.json')
