@@ -8,8 +8,8 @@ import searchResults from './api/searchResults.json';
 function Search() {
     const router = useRouter();
     const { location, startDate, endDate, guests } = router.query;
-    const formattedStartDate = format(new Date(startDate), "MMMM dd");
-    const formattedEndDate = format(new Date(endDate), "MMMM dd");
+    const formattedStartDate = startDate ? format(new Date(startDate), "MMMM dd") : '';
+    const formattedEndDate = endDate ? format(new Date(endDate), "MMMM dd") : '';
     const range = `${formattedStartDate} to ${formattedEndDate}`
     
     return (
