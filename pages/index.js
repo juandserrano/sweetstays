@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
+import LargeCard from '../components/LargeCard'
 import MediumCard from '../components/MediumCard'
 import SmallCard from '../components/SmallCard'
 import exploreData from './api/data.json'
@@ -29,11 +31,11 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="pt-6">
+        <section>
           <h2 className="text-4xl font-semibold py-8">Live anywhere</h2>
           
           {/* Pull some data from a server - API endpoints */}
-          <div className="flex items-center h-[28rem] overflow-auto space-x-3 mb-5 flex-col sm:flex-row">
+          <div className="flex overflow-scroll space-x-3 scrollbar-hide p-3 -ml-3">
             {cardsData?.map(item => (
               <MediumCard 
               key={item.img}
@@ -41,18 +43,17 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <LargeCard 
+          img="https://links.papareact.com/4cj"
+          title="The Greatest Outdoors"
+          description="Wishlists curated by Airbnb"
+          buttonText="Get Inspired"
+
+        />
+
       </main>
+      <Footer />
     </div>
   )
 }
-
-
-// export async function getStaticProps() {
-//   const exploreData = await fetch('api/data.json')
-//     .then(res => res.json());
-//   return {
-//     props: {
-//       exploreData
-//     }
-//   }
-// }
