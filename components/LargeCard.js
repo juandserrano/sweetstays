@@ -11,7 +11,8 @@ function LargeCard({ img, title, description, buttonText }) {
                 <p>{description}</p>
                 <button className="text-sm text-white 
                 bg-purple-500 font-bold rounded-lg mt-2 py-2 px-5
-                shadow-md cursor-pointer">{buttonText}</button>
+                shadow-md cursor-pointer hover:scale-105 hover:shadow-lg
+                active:bg-purple-700 transition">{buttonText}</button>
             </div>          
         </section>
     )
