@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { format } from 'date-fns';
