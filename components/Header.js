@@ -4,7 +4,7 @@ import { useState } from 'react';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 
 
 function Header({ placeholder }) {
@@ -44,7 +44,7 @@ function Header({ placeholder }) {
     return (
         <header className='sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10'>
             <div className='flex items-center h-12 my-auto'>
-                <div className="relative cursor-pointer flex h-full pr-2 items-center" onClick={router.push('/')}>
+                <div className="relative cursor-pointer flex h-full pr-2 items-center" onClick={() => router.push('/')}>
                     <Image 
                         src="/logo.jpg"
                         layout="fill"
