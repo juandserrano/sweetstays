@@ -13,14 +13,14 @@ function InfoCard({ img, location, title, description, star, price, total }) {
             <div className="flex flex-grow flex-col pl-5">
                 <div className="flex flex-grow justify-between">
                     <p>{location}</p>
-                    <HeartIcon className="h-7 cursor-pointer text-red-400" />
+                    <HeartIcon className="h-7 cursor-pointer text-red-600" />
                 </div>
                 <h4 className="text-xl">{title}</h4>
                 <div className="border-b w-10 pt-2"/>
                 <p className="pt-2 text-sm text-gray-500 flex-grow">{description}</p>
                 <div className="flex justify-between pr-5 items-end">
                     <p className="flex items-center">
-                        <StarIcon className="h-5 text-red-400"/>
+                        <StarIcon className="h-5 text-red-600"/>
                         {star}
                     </p>
                     <div>

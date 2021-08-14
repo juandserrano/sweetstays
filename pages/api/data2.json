@@ -1,18 +1,14 @@
 [
     {
-        "img": "https://links.papareact.com/2io",
-        "title": "Outdoor getaways"
+        "img": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "title": "Go outdoors!"
     },
     {
-        "img": "https://links.papareact.com/q7j",
-        "title": "Unique stays"
-    },
-    {
-        "img": "https://links.papareact.com/s03",
+        "img": "https://images.unsplash.com/photo-1589129140837-67287c22521b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1901&q=80",
         "title": "Entire homes"
     },
     {
-        "img": "https://links.papareact.com/8ix",
-        "title": "Pets allowed"
+        "img": "https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80",
+        "title": "Pet friendly"
     }
 ]

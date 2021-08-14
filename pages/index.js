@@ -35,7 +35,7 @@ export default function Home() {
           <h2 className="text-4xl font-semibold py-8">Live anywhere</h2>
           
           {/* Pull some data from a server - API endpoints */}
-          <div className="flex overflow-scroll space-x-3 scrollbar-hide p-3 -ml-3">
+          <div className="flex justify-center overflow-scroll space-x-3 scrollbar-hide p-3 -ml-3">
             {cardsData?.map(item => (
               <MediumCard 
               key={item.img}
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
 
         <LargeCard 
-          img="https://links.papareact.com/4cj"
+          img="https://images.unsplash.com/photo-1584278773680-8d940a213dcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1958&q=80"
           title="The Greatest Outdoors"
           description="Wishlists curated by Airbnb"
           buttonText="Get Inspired"

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import { format } from 'date-fns';
 import InfoCard from "../components/InfoCard";
 import searchResults from './api/searchResults.json';
+import Map from "../components/Map";
  
 function Search() {
     const router = useRouter();
@@ -11,6 +12,7 @@ function Search() {
     const formattedStartDate = startDate ? format(new Date(startDate), "MMMM dd") : '';
     const formattedEndDate = endDate ? format(new Date(endDate), "MMMM dd") : '';
     const range = `${formattedStartDate} to ${formattedEndDate}`
+
     
     return (
         <div>
@@ -39,6 +41,9 @@ function Search() {
                                         ))}
                     </div>
 
+                </section>
+                <section className="hidden border-2 xl:inline-flex xl:min-w-[600px] py-14">
+                    <Map searchResults={searchResults} />
                 </section>
             </main>
             <Footer />
