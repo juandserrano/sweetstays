@@ -11,6 +11,7 @@
   "dependencies": {
     "@badrap/bar-of-progress": "latest",
     "@heroicons/react": "latest",
+    "@netlify/plugin-nextjs": "^5.14.7",
     "@tailwindcss/postcss": "^4.1.17",
     "date-fns": "latest",
     "geolib": "latest",
