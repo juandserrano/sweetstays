@@ -1,12 +1,12 @@
 {
+  "engines": {
+    "node": ">=18"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
-  },
-  "engines": {
-    "node": "16.x"
   },
   "dependencies": {
     "@badrap/bar-of-progress": "latest",
