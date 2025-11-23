@@ -12,8 +12,6 @@ function Footer() {
                 <h5 className="font-bold">COMMUNITY</h5>
                 <p>This is not a real site</p>
                 <p>It's a pretty awesome clone</p>
-                <p>Look mom! I made it!</p>
-                <p>Nothing to see here</p>
             </div>
             <div className="space-y-4 text-xs text-gray-800">
                 <h5 className="font-bold">HOST</h5>
