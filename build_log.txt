@@ -1,0 +1,111 @@
+
+> build
+> next build
+
+ ⚠ `images.domains` is deprecated in favor of `images.remotePatterns`. Please update next.config.js to protect your application from malicious users.
+   ▲ Next.js 16.0.3 (Turbopack)
+
+   Running TypeScript ...
+   Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 5 errors:
+./node_modules/mapbox-gl/dist/mapbox-gl.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (/Users/wizzi/dev/sweetstays/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:165:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+
+Import trace:
+  Browser:
+    ./node_modules/mapbox-gl/dist/mapbox-gl.css
+    ./pages/_app.js
+
+
+./node_modules/react-date-range/dist/styles.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (/Users/wizzi/dev/sweetstays/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:165:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+
+Import trace:
+  Browser:
+    ./node_modules/react-date-range/dist/styles.css
+    ./components/Header.js
+    ./pages/index.js
+
+
+./node_modules/react-date-range/dist/theme/default.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (/Users/wizzi/dev/sweetstays/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:165:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+
+Import trace:
+  Browser:
+    ./node_modules/react-date-range/dist/theme/default.css
+    ./components/Header.js
+    ./pages/index.js
+
+
+./styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (/Users/wizzi/dev/sweetstays/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:165:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+
+Import trace:
+  Browser:
+    ./styles/global.css
+    ./pages/_app.js
+
+
+./components/Map.js:2:1
+Module not found: Can't resolve 'react-map-gl'
+[0m [90m 1 |[39m [36mimport[39m { useState } [36mfrom[39m [32m'react'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mReactMap[39m[33m,[39m { [33mMarker[39m[33m,[39m [33mPopup[39m } [36mfrom[39m [32m'react-map-gl'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m { getCenter } [36mfrom[39m [32m'geolib'[39m[33m;[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mfunction[39m [33mMap[39m({ searchResults }) {[0m
+
+
+
+Import traces:
+  Browser:
+    ./components/Map.js
+    ./pages/search.js
+
+  SSR:
+    ./components/Map.js
+    ./pages/search.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26])
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26])
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26])
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:155:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [/Users/wizzi/dev/sweetstays/.next/build/chunks/[root-of-the-server]__44695d76._.js:429:26])
+    at <unknown> (./components/Map.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

@@ -4,8 +4,12 @@ import Header from "../components/Header";
 import { format } from 'date-fns';
 import InfoCard from "../components/InfoCard";
 import searchResults from './api/searchResults.json';
-import Map from "../components/Map";
- 
+import dynamic from 'next/dynamic';
+
+const Map = dynamic(() => import("../components/Map"), {
+    ssr: false
+});
+
 function Search() {
     const router = useRouter();
     const { location, startDate, endDate, guests } = router.query;
@@ -13,10 +17,10 @@ function Search() {
     const formattedEndDate = endDate ? format(new Date(endDate), "MMMM dd") : '';
     const range = `${formattedStartDate} to ${formattedEndDate}`
 
-    
+
     return (
         <div>
-            <Header placeholder={`${location} | ${range} | ${guests}`}/>
+            <Header placeholder={`${location} | ${range} | ${guests}`} />
             <main className="flex">
                 <section className="flex-grow pt-14 px-6">
                     <p className="text-xs">300+ Stays from {range} for {guests} guest{guests == 1 ? '' : 's'}</p>
@@ -27,18 +31,18 @@ function Search() {
                         <p className="button">Price</p>
                     </div>
                     <div className="flex flex-col">
-                                        {searchResults.map(({ img, location, title, description, star, price, total }) => (
-                                            <InfoCard 
-                                                key={img}
-                                                img={img}
-                                                location={location}
-                                                title={title}
-                                                description={description}
-                                                star={star}
-                                                price={price}
-                                                total={total}
-                                            />
-                                        ))}
+                        {searchResults.map(({ img, location, title, description, star, price, total }) => (
+                            <InfoCard
+                                key={img}
+                                img={img}
+                                location={location}
+                                title={title}
+                                description={description}
+                                star={star}
+                                price={price}
+                                total={total}
+                            />
+                        ))}
                     </div>
 
                 </section>
